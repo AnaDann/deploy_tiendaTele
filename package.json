@@ -22,5 +22,11 @@
     "mongoose": "^6.0.13",
     "nodemon": "^1.0.0",
     "resize-img": "^2.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.5",
+    "@babel/node": "^7.16.5",
+    "@babel/preset-env": "^7.16.5"
   }
 }

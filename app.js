@@ -127,7 +127,7 @@ app.use('/products', products);
 app.use('/',pages);
 
 //Start the server
-var port = 3000;
+var port = 3000 || !origin;
 app.listen(port,function(){
     console.log('Server starteed on port '+ port);
 });
