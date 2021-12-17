@@ -127,9 +127,15 @@ app.use('/products', products);
 app.use('/',pages);
 
 //Start the server
-var port = 3000 || !origin;
-app.listen(port,function(){
-    console.log('Server starteed on port '+ port);
+const host = process.env.HOST ||'0.0.0.0';
+const port = process.env.PORT ||3000;
+require('dotenv').config({path: variables.env})
+
+const PORT = // 3001;
+app.listen(PORT, HOST, ()=>{
+
+//app.listen(port,function(){
+    console.log('Server starteed on port '+ port+'EN EL HOST'+HOST);
 });
 
 
